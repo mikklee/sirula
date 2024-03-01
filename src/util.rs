@@ -17,10 +17,12 @@ along with sirula.  If not, see <https://www.gnu.org/licenses/>.
 
 use crate::consts::*;
 use freedesktop_entry_parser::parse_entry;
-use gio::{prelude::{AppInfoExt, AppInfoExtManual}, AppInfo, AppInfoCreateFlags};
-use glib::{shell_parse_argv, GString, MainContext, ObjectExt};
+use gio::{
+    glib::{shell_parse_argv, GString, MainContext, ObjectExt},
+    prelude::{AppInfoExt, AppInfoExtManual},
+    AppInfo, AppInfoCreateFlags,
+};
 use gtk::{prelude::CssProviderExt, CssProvider};
-use osstrtools::OsStrTools;
 use std::ffi::OsStr;
 use std::path::PathBuf;
 use std::process::Command;

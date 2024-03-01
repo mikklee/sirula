@@ -19,8 +19,7 @@ along with sirula.  If not, see <https://www.gnu.org/licenses/>.
 
 use crate::locale::string_collate;
 use fuzzy_matcher::{skim::SkimMatcherV2, FuzzyMatcher};
-use gio::AppInfo;
-use glib::shell_unquote;
+use gio::{glib::shell_unquote, AppInfo};
 use gtk::{
     builders::{BoxBuilder, ImageBuilder, LabelBuilder},
     prelude::*,
